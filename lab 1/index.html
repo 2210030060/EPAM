@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Garden</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: url('b') no-repeat center center fixed; 
+            background-size: cover; 
+        }
+        header { background: #8e24aa; color: white; text-align: center; padding: 30px; font-size: 32px; }
+        nav { background: #ab47bc; padding: 12px; text-align: center; display: flex; justify-content: center; gap: 25px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 10px 18px; font-size: 18px; }
+        .hero { background: url('flower-banner.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 36px; font-weight: bold; text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); }
+        .flower-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px; }
+        .flower { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); text-align: center; width: 300px; margin-bottom: 20px; }
+        .flower img { width: 300px; height: 300px; border-radius: 12px; }
+        footer { background: #8e24aa; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+        @media print {
+            body { background: none; color: black; }
+            header, footer, nav { background: none; color: black; }
+            .hero { display: none; }
+            .flower { box-shadow: none; border: 1px solid black; }
+            nav a { color: black; }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Flower Garden website loaded successfully!");
+        });
+        function printPage() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Flower Garden</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#flowers">Flowers</a>
+        <a href="#contact">Contact</a>
+        <button onclick="printPage()" style="margin-left: 20px; padding: 5px 10px; background: #ffeb3b; border: none; cursor: pointer;">Print</button>
+    </nav>
+    <div class="hero">Explore the Beauty of Flowers</div>
+    <section id="flowers" class="flower-container">
+        <div class="flower">
+            <img src="rose.jpg" alt="Rose">
+            <h2>Rose</h2>
+            <p>The symbol of love and beauty.</p>
+        </div>
+        <div class="flower">
+            <img src="tulip.jpg" alt="Tulip">
+            <h2>Tulip</h2>
+            <p>A sign of perfect love and elegance.</p>
+        </div>
+        <div class="flower">
+            <img src="sunflower.jpg" alt="Sunflower">
+            <h2>Sunflower</h2>
+            <p>Bright and cheerful, following the sun.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Flower Garden</p>
+    </footer>
+</body>
+</html>

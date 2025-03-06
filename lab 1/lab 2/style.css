@@ -1,0 +1,203 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and Body Styling */
+body { 
+    font-family: Arial, sans-serif; 
+    background: url('https://images.unsplash.com/photo-1567987811-6d832fdd2e4b') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #333;
+}
+
+/* Header */
+header { 
+    background: rgba(142, 36, 170, 0.9); 
+    color: white; 
+    text-align: center; 
+    padding: 30px; 
+    font-size: 32px; 
+}
+
+/* Navigation Bar */
+nav { 
+    background: #ab47bc; 
+    padding: 12px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px; 
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 10px 18px; 
+    font-size: 18px; 
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #8e24aa;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background: #ffeb3b;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #fdd835;
+}
+
+/* Hero Section */
+.hero { 
+    background: url('flower-banner.jpg') no-repeat center center/cover; 
+    height: 400px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 36px; 
+    font-weight: bold; 
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+/* Flower Section */
+.flower-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 40px; 
+}
+
+.flower { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    width: 300px; 
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.flower img { 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 12px; 
+}
+
+.flower:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer { 
+    backgrou
+/* General Styles */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: url('coffee-background.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+}
+
+/* Header */
+header { 
+    background: #6f4e37; 
+    color: white; 
+    text-align: center; 
+    padding: 30px; 
+    font-size: 32px; 
+}
+
+/* Navigation */
+nav { 
+    background: #8b5a2b; 
+    padding: 12px; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px; 
+}
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 10px 18px; 
+    font-size: 18px; 
+}
+nav button {
+    margin-left: 20px; 
+    padding: 5px 10px; 
+    background: #ffeb3b; 
+    border: none; 
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero { 
+    background: url('coffee-banner.jpg') no-repeat center center/cover; 
+    height: 400px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 36px; 
+    font-weight: bold; 
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+/* Coffee Section */
+.coffee-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 40px; 
+}
+.coffee { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    width: 300px; 
+    margin-bottom: 20px; 
+}
+.coffee img { 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 12px; 
+}
+
+/* Footer */
+footer { 
+    background: #6f4e37; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 30px; 
+}
+
+/* Print Media Styles */
+@media print {
+    body { background: none; color: black; }
+    header, footer, nav { background: none; color: black; }
+    .hero { display: none; }
+    .coffee { box-shadow: none; border: 1px solid black; }
+    nav a { color: black; }
+}

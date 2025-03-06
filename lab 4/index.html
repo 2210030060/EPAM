@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Light blue gradient */
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        input {
+            border: 2px solid #007BFF; /* Blue border */
+        }
+        button {
+            background: #007BFF; /* Blue button */
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #0056b3; /* Darker blue on hover */
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #0056b3;">Reverse an Integer</h2>
+        <input type="number" id="numInput" placeholder="Enter a number">
+        <button onclick="reverseNumber()">Reverse</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function reverseNumber() {
+            let num = document.getElementById("numInput").value;
+            if (num === "") {
+                document.getElementById("result").innerText = "Please enter a number.";
+                return;
+            }
+
+            let isNegative = num < 0;
+            let reversed = Math.abs(num).toString().split("").reverse().join("");
+            let result = isNegative ? -parseInt(reversed) : parseInt(reversed);
+
+            document.getElementById("result").innerText = "Reversed Number: " + result;
+        }
+    </script>
+
+</body>
+</html>
